@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+    --primary-color: #9b8aff;
+    --text-color: #dcddde;
+    --bg-color: rgba(25, 25, 25, .7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Libertinus Serif', Georgia, serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.message-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 2rem;
+}
+
+.message-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.message-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.message-container p:first-of-type {
+    font-family: 'Libertinus Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.thinking {
+    color: #888;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.animated-text span {
+    animation: wave 2s ease-in-out infinite;
+    opacity: 0.4;
+}
+
+@keyframes wave {
+    0%, 60%, 100% {
+        opacity: 0.4;
+    }
+    30% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .message-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .message-container p {
+        font-size: 1rem;
+    }
+}
