@@ -75,10 +75,10 @@ body {
 
 @media (max-width: 768px) {
     .message-container h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     .message-container p {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
