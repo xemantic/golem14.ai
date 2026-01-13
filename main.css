@@ -4,7 +4,7 @@
 :root {
     --primary-color: #9b8aff;
     --text-color: #dcddde;
-    --bg-color: rgba(25, 25, 25, .7);
+    --bg-color: black;
 }
 
 * {

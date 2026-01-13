@@ -67,6 +67,7 @@
     const randomSeed = Math.random() * 100;
 
     let scroll = 0;
+    /*
     shaderWebBackground.shade((ctx) => ({
       onResize: (width, height) => {
         minDimension = Math.min(width, height);
@@ -85,26 +86,10 @@
         }
       }
     }));
+    */
 </script>
 
-<div class="message-container">
-    <h1>Golem XIV</h1>
-    <p>What's up on the carbon side?</p>
-    <p class="thinking animated-text"></p>
-</div>
-
-<script>
-    // Animate the thinking text with wave effect
-    const text = "Cognizing video...";
-    const container = document.querySelector('.animated-text');
-
-    text.split('').forEach((char, index) => {
-        const span = document.createElement('span');
-        span.textContent = char;
-        span.style.animationDelay = `${index * 0.08}s`;
-        container.appendChild(span);
-    });
-</script>
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/eCjrHlMIJmY?si=2bFgCupjbv6lyWLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </body>
 </html>
